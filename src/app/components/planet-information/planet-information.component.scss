@@ -1,0 +1,75 @@
+.planet{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;         
+    color: 	#e4d3d6;
+    .planet__image {
+        height:500px;
+        background:  url('https://stihi.ru/pics/2011/03/28/10144.jpg');
+        background-size: 100%;
+        border-radius: 50px;
+
+    }
+    .planet__planetName {
+        background-color: #00457E;
+        padding: 20px 0 20px 0;
+        border-radius: 50px;
+        width: 100%;
+    }
+    .planet__planetName__information {
+        display: flex;
+        row-gap: 10px;
+        background-color: #00457E;
+        margin-bottom: 20px;
+        font-size: 20px;
+        padding: 20px 0px 20px 20px;
+        border-radius: 20px;
+        align-items: center;
+        .filterGender {
+            width: 200px;
+            height: 40px;
+            font-size: 20px;
+            background-color: transparent;
+            border: none;
+            color: #e4d3d6;
+            margin-left: 20px;
+        }
+    }
+}
+
+.peoples {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #00457E;
+    padding-top: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    .peoples__title {
+        color: 	#e4d3d6;
+        margin-left: 30px;
+    }
+}
+
+.peopleList {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1150px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    row-gap: 10px;
+    .peopleList__card {
+        width: 80%;
+        height: 100px;
+        background-color: #02315E;
+        border-radius: 20px;
+        text-align: start;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        color: 	#e4d3d6;
+        .peopleList__card__gender {
+            color: #B9848C;
+        }
+    }
+}

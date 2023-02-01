@@ -1,0 +1,28 @@
+
+<div class="planet">
+    <div class="planet__image"></div>
+    <h1 class="planet__planetName">Планета {{planet?.name}}</h1>
+    <div class="planet__planetName__information">
+        <p>climat ({{planet?.climate}})</p>
+        <p>graviry ({{planet?.gravity}})</p> 
+        <p>terrain ({{planet?.terrain}})</p> 
+        <select class="filterGender" (change)="filterGender($event)">
+            <option value="all">all</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="n/a">n/a</option>
+        </select>
+    </div>
+</div>
+
+<div class="peoples">
+    <h1 class="peoples__title">Список персонажей</h1>
+    <div class="peopleList">
+    <div class="peopleList__card" *ngFor="let item of peopleArrFilter; let i = index">
+        <h1 class="peopleList__card__name">{{item.name}}</h1>
+        <p class="peopleList__card__gender">{{item.gender!}}</p>
+    </div>
+</div>
+</div>
+
+

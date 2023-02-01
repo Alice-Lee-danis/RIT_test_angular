@@ -1,0 +1,28 @@
+
+<div class="header">
+    <h1 class="header__title">Планеты</h1>
+</div>
+
+<div class="playloader" *ngIf="!planetsArr.length; else elseBlock">
+    <p >загрузка</p>
+</div>
+
+<ng-template #elseBlock>
+    <div class="planets">
+        <div class="planets__card" *ngFor="let item of planetsArr; let i = index" (click)="openPlanet(i)">
+            <div class="planets__card__image"></div>
+                <div class="planets__card_info">
+                    <h1 class="planets__card__info__title">{{item.name}}</h1>
+                        <div class="planets__card_info__optional">
+                            <p class="planets__card__info__information">climat ({{item.climate}})</p>
+                            <p class="planets__card__info__information">graviry ({{item.gravity}})</p> 
+                            <p class="planets__card__info__information">terrain ({{item.terrain}})</p> 
+                        </div>
+                </div>
+            </div>
+    </div> 
+</ng-template>
+
+
+
+
